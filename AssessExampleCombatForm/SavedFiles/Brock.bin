@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Brock</name>
+  <className>TheRock</className>
+  <maxHealth>20</maxHealth>
+  <health>20</health>
+  <speed>3</speed>
+  <dexterity>2</dexterity>
+  <strength>6</strength>
+  <intelligence>4</intelligence>
+  <alive>true</alive>
+  <Dexerity>2</Dexerity>
+  <Health>20</Health>
+  <Intelligence>4</Intelligence>
+  <Speed>3</Speed>
+  <Strength>6</Strength>
+  <Alive>true</Alive>
+</Unit>

@@ -7,16 +7,32 @@ using System.Threading.Tasks;
 namespace Combat.Classes
 {
     [Serializable]
-    class Unit : Interfaces.IUnit
+    public class Unit : Interfaces.IUnit
     {
-        string  name, 
-                className;
-        int     maxHealth,
-                health;
-        float   speed,
-                dexterity, 
-                strength, 
-                intelligence;
+        public string   name, 
+                        className;
+        public int      maxHealth,
+                        health;
+        public float    speed,
+                        dexterity, 
+                        strength, 
+                        intelligence;
+        public bool     alive;
+
+        Unit() { }
+
+        public Unit(string n, string cs, int mHealth, float spd, float dex, float str, float intel)
+        {
+            name         = n;
+            className    = cs;
+            maxHealth    = mHealth;
+            health       = maxHealth;
+            speed        = spd;
+            dexterity    = dex;
+            strength     = str;
+            intelligence = intel;
+            alive        = true;
+        }
 
         #region IUnit Inerface Implementation
         public string ClassName
@@ -105,6 +121,19 @@ namespace Combat.Classes
             set
             {
                 strength = value;
+            }
+        }
+
+        public bool Alive
+        {
+            get
+            {
+                return alive;
+            }
+
+            set
+            {
+                alive = value;
             }
         }
         #endregion

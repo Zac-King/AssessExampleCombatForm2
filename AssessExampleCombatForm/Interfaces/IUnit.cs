@@ -15,5 +15,7 @@ namespace Combat.Interfaces
         float Dexerity      { get; set; }
         float Intelligence  { get; set; }
         float Strength      { get; set; }
+
+        bool Alive          { get; set; }
     }
 }

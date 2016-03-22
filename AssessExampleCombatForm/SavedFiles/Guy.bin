@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Guy</name>
+  <className>Warrrrrrrrrrrior</className>
+  <maxHealth>20</maxHealth>
+  <health>20</health>
+  <speed>3</speed>
+  <dexterity>4</dexterity>
+  <strength>5</strength>
+  <intelligence>3</intelligence>
+  <alive>true</alive>
+  <Dexerity>4</Dexerity>
+  <Health>20</Health>
+  <Intelligence>3</Intelligence>
+  <Speed>3</Speed>
+  <Strength>5</Strength>
+  <Alive>true</Alive>
+</Unit>
