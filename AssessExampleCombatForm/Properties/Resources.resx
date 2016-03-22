@@ -121,4 +121,7 @@
   <data name="Troll_Face" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Troll_Face.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shy_ivara_by_zilvtree_zauani-d9jrp98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shy_ivara_by_zilvtree_zauani-d9jrp98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -48,7 +48,10 @@ namespace AssessExampleCombatForm
             CharactersOnFile.Items.Clear();
 
             foreach (Combat.Classes.Unit c in CreatedUnits)
-                CharactersOnFile.Items.Add(c);
+            {
+                CharactersOnFile.Items.Add(c.Name);
+            }
+                
         }
 
         

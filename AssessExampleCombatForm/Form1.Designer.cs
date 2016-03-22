@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.CreatedCharacters = new System.Windows.Forms.ListBox();
             this.AddSelectedToA = new System.Windows.Forms.Button();
             this.AddSelectedToB = new System.Windows.Forms.Button();
@@ -36,14 +39,17 @@
             this.CreateCharacterButton = new System.Windows.Forms.Button();
             this.LoadCharacterButton = new System.Windows.Forms.Button();
             this.StartGame = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CreatedCharacters
             // 
             this.CreatedCharacters.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.CreatedCharacters.FormattingEnabled = true;
-            this.CreatedCharacters.Location = new System.Drawing.Point(12, 12);
+            this.CreatedCharacters.Location = new System.Drawing.Point(29, 12);
             this.CreatedCharacters.Name = "CreatedCharacters";
             this.CreatedCharacters.Size = new System.Drawing.Size(120, 95);
             this.CreatedCharacters.Sorted = true;
@@ -51,7 +57,7 @@
             // 
             // AddSelectedToA
             // 
-            this.AddSelectedToA.Location = new System.Drawing.Point(12, 135);
+            this.AddSelectedToA.Location = new System.Drawing.Point(205, 159);
             this.AddSelectedToA.Name = "AddSelectedToA";
             this.AddSelectedToA.Size = new System.Drawing.Size(75, 23);
             this.AddSelectedToA.TabIndex = 3;
@@ -60,7 +66,7 @@
             // 
             // AddSelectedToB
             // 
-            this.AddSelectedToB.Location = new System.Drawing.Point(125, 135);
+            this.AddSelectedToB.Location = new System.Drawing.Point(318, 159);
             this.AddSelectedToB.Name = "AddSelectedToB";
             this.AddSelectedToB.Size = new System.Drawing.Size(75, 23);
             this.AddSelectedToB.TabIndex = 4;
@@ -69,7 +75,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 163);
+            this.textBox1.Location = new System.Drawing.Point(205, 187);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(88, 98);
@@ -77,7 +83,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 163);
+            this.textBox2.Location = new System.Drawing.Point(303, 187);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(90, 98);
@@ -85,7 +91,7 @@
             // 
             // CreateCharacterButton
             // 
-            this.CreateCharacterButton.Location = new System.Drawing.Point(169, 29);
+            this.CreateCharacterButton.Location = new System.Drawing.Point(12, 113);
             this.CreateCharacterButton.Name = "CreateCharacterButton";
             this.CreateCharacterButton.Size = new System.Drawing.Size(75, 23);
             this.CreateCharacterButton.TabIndex = 8;
@@ -95,7 +101,7 @@
             // 
             // LoadCharacterButton
             // 
-            this.LoadCharacterButton.Location = new System.Drawing.Point(169, 68);
+            this.LoadCharacterButton.Location = new System.Drawing.Point(93, 113);
             this.LoadCharacterButton.Name = "LoadCharacterButton";
             this.LoadCharacterButton.Size = new System.Drawing.Size(75, 23);
             this.LoadCharacterButton.TabIndex = 9;
@@ -104,7 +110,7 @@
             // 
             // StartGame
             // 
-            this.StartGame.Location = new System.Drawing.Point(68, 267);
+            this.StartGame.Location = new System.Drawing.Point(261, 291);
             this.StartGame.Name = "StartGame";
             this.StartGame.Size = new System.Drawing.Size(75, 23);
             this.StartGame.TabIndex = 10;
@@ -112,23 +118,43 @@
             this.StartGame.UseVisualStyleBackColor = true;
             this.StartGame.Visible = false;
             // 
-            // button1
+            // chart1
             // 
-            this.button1.Location = new System.Drawing.Point(124, 296);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.QuickTest);
+            this.chart1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(202, 13);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(191, 123);
+            this.chart1.TabIndex = 14;
+            this.chart1.Text = "Character Stats";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::AssessExampleCombatForm.Properties.Resources.shy_ivara_by_zilvtree_zauani_d9jrp98;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 142);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 172);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(262, 336);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(408, 336);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.StartGame);
             this.Controls.Add(this.LoadCharacterButton);
             this.Controls.Add(this.CreateCharacterButton);
@@ -140,6 +166,8 @@
             this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,7 +183,8 @@
         private System.Windows.Forms.Button CreateCharacterButton;
         private System.Windows.Forms.Button LoadCharacterButton;
         private System.Windows.Forms.Button StartGame;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

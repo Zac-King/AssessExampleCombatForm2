@@ -63,6 +63,16 @@ namespace AssessExampleCombatForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shy_ivara_by_zilvtree_zauani_d9jrp98 {
+            get {
+                object obj = ResourceManager.GetObject("shy_ivara_by_zilvtree_zauani-d9jrp98", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Troll_Face {
             get {
                 object obj = ResourceManager.GetObject("Troll_Face", resourceCulture);
