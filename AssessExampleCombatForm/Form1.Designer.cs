@@ -34,15 +34,15 @@
             this.CreatedCharacters = new System.Windows.Forms.ListBox();
             this.AddSelectedToA = new System.Windows.Forms.Button();
             this.AddSelectedToB = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PartyATestBox = new System.Windows.Forms.TextBox();
+            this.PartyBTextBox = new System.Windows.Forms.TextBox();
             this.CreateCharacterButton = new System.Windows.Forms.Button();
             this.LoadCharacterButton = new System.Windows.Forms.Button();
             this.StartGame = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.CharacterStatChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.CharacterImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterStatChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterImage)).BeginInit();
             this.SuspendLayout();
             // 
             // CreatedCharacters
@@ -73,21 +73,21 @@
             this.AddSelectedToB.Text = "PartyB";
             this.AddSelectedToB.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // PartyATestBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(205, 187);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(88, 98);
-            this.textBox1.TabIndex = 6;
+            this.PartyATestBox.Location = new System.Drawing.Point(205, 187);
+            this.PartyATestBox.Multiline = true;
+            this.PartyATestBox.Name = "PartyATestBox";
+            this.PartyATestBox.Size = new System.Drawing.Size(88, 98);
+            this.PartyATestBox.TabIndex = 6;
             // 
-            // textBox2
+            // PartyBTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(303, 187);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(90, 98);
-            this.textBox2.TabIndex = 7;
+            this.PartyBTextBox.Location = new System.Drawing.Point(303, 187);
+            this.PartyBTextBox.Multiline = true;
+            this.PartyBTextBox.Name = "PartyBTextBox";
+            this.PartyBTextBox.Size = new System.Drawing.Size(90, 98);
+            this.PartyBTextBox.TabIndex = 7;
             // 
             // CreateCharacterButton
             // 
@@ -118,34 +118,34 @@
             this.StartGame.UseVisualStyleBackColor = true;
             this.StartGame.Visible = false;
             // 
-            // chart1
+            // CharacterStatChart
             // 
-            this.chart1.BackColor = System.Drawing.Color.Transparent;
+            this.CharacterStatChart.BackColor = System.Drawing.Color.Transparent;
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.CharacterStatChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(202, 13);
-            this.chart1.Name = "chart1";
+            this.CharacterStatChart.Legends.Add(legend1);
+            this.CharacterStatChart.Location = new System.Drawing.Point(202, 13);
+            this.CharacterStatChart.Name = "CharacterStatChart";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(191, 123);
-            this.chart1.TabIndex = 14;
-            this.chart1.Text = "Character Stats";
+            this.CharacterStatChart.Series.Add(series1);
+            this.CharacterStatChart.Size = new System.Drawing.Size(191, 123);
+            this.CharacterStatChart.TabIndex = 14;
+            this.CharacterStatChart.Text = "Character Stats";
             // 
-            // pictureBox1
+            // CharacterImage
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::AssessExampleCombatForm.Properties.Resources.shy_ivara_by_zilvtree_zauani_d9jrp98;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 142);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 172);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.CharacterImage.BackColor = System.Drawing.Color.Transparent;
+            this.CharacterImage.Image = global::AssessExampleCombatForm.Properties.Resources.shy_ivara_by_zilvtree_zauani_d9jrp98;
+            this.CharacterImage.Location = new System.Drawing.Point(12, 142);
+            this.CharacterImage.Name = "CharacterImage";
+            this.CharacterImage.Size = new System.Drawing.Size(175, 172);
+            this.CharacterImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CharacterImage.TabIndex = 15;
+            this.CharacterImage.TabStop = false;
             // 
             // Form1
             // 
@@ -153,21 +153,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(408, 336);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.CharacterImage);
+            this.Controls.Add(this.CharacterStatChart);
             this.Controls.Add(this.StartGame);
             this.Controls.Add(this.LoadCharacterButton);
             this.Controls.Add(this.CreateCharacterButton);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PartyBTextBox);
+            this.Controls.Add(this.PartyATestBox);
             this.Controls.Add(this.AddSelectedToB);
             this.Controls.Add(this.AddSelectedToA);
             this.Controls.Add(this.CreatedCharacters);
             this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterStatChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,13 +178,13 @@
         private System.Windows.Forms.ListBox CreatedCharacters;
         private System.Windows.Forms.Button AddSelectedToA;
         private System.Windows.Forms.Button AddSelectedToB;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox PartyATestBox;
+        private System.Windows.Forms.TextBox PartyBTextBox;
         private System.Windows.Forms.Button CreateCharacterButton;
         private System.Windows.Forms.Button LoadCharacterButton;
         private System.Windows.Forms.Button StartGame;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart CharacterStatChart;
+        private System.Windows.Forms.PictureBox CharacterImage;
     }
 }
 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace AssessExampleCombatForm
 {
@@ -15,10 +16,14 @@ namespace AssessExampleCombatForm
     {
         List<Combat.Classes.Unit> CreatedUnits = new List<Combat.Classes.Unit>();
         ListBox CharactersOnFile = new ListBox();
+        Chart StatChart = new Chart();
+        Combat.Classes.Unit SelectedUnit;
+    
         public Form1()
         {
             InitializeComponent();
             CharactersOnFile = this.Controls.Find("CreatedCharacters", true).FirstOrDefault() as ListBox;
+            StatChart = this.Controls.Find("CharacterStatChart", true).FirstOrDefault() as Chart;
             SyncCreatedCharacters();
         }
 
@@ -26,7 +31,6 @@ namespace AssessExampleCombatForm
         {
             CreationWindow createWindow = new CreationWindow();
             createWindow.formParent = this;
-            //createWindow.MdiParent = this;
             createWindow.Show();
         }
 
@@ -54,6 +58,9 @@ namespace AssessExampleCombatForm
                 
         }
 
-        
+       private void UpdateSelected(object sender, EventArgs e)
+        {
+           // SelectedUnit = CharactersOnFile.GetSelected();
+        } 
     }
 }
