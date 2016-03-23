@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <name>Matthew</name>
-  <className>Teach</className>
+  <className>The Psylocke</className>
   <maxHealth>20</maxHealth>
   <health>20</health>
-  <speed>3</speed>
-  <dexterity>4</dexterity>
+  <speed>4</speed>
+  <dexterity>5</dexterity>
   <strength>4</strength>
-  <intelligence>4</intelligence>
+  <intelligence>2</intelligence>
   <alive>true</alive>
-  <Dexerity>4</Dexerity>
+  <Dexerity>5</Dexerity>
   <Health>20</Health>
-  <Intelligence>4</Intelligence>
-  <Speed>3</Speed>
+  <Intelligence>2</Intelligence>
+  <Speed>4</Speed>
   <Strength>4</Strength>
   <Alive>true</Alive>
 </Unit>

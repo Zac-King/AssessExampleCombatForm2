@@ -63,9 +63,99 @@ namespace AssessExampleCombatForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3565416_4948259062_Tidus {
+            get {
+                object obj = ResourceManager.GetObject("3565416-4948259062-Tidus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cloud_gif {
+            get {
+                object obj = ResourceManager.GetObject("Cloud_gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cloud_Strife {
+            get {
+                object obj = ResourceManager.GetObject("Cloud_Strife", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DissidiaKefkaArtwork {
+            get {
+                object obj = ResourceManager.GetObject("DissidiaKefkaArtwork", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giphy {
+            get {
+                object obj = ResourceManager.GetObject("giphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kh2_Vivi {
+            get {
+                object obj = ResourceManager.GetObject("Kh2-Vivi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sephiroth {
+            get {
+                object obj = ResourceManager.GetObject("Sephiroth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shy_ivara_by_zilvtree_zauani_d9jrp98 {
             get {
                 object obj = ResourceManager.GetObject("shy_ivara_by_zilvtree_zauani-d9jrp98", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap squall_dissidia {
+            get {
+                object obj = ResourceManager.GetObject("squall_dissidia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tonberry_enemy_ffx {
+            get {
+                object obj = ResourceManager.GetObject("Tonberry-enemy-ffx", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

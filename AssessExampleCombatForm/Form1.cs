@@ -15,15 +15,25 @@ namespace AssessExampleCombatForm
     public partial class Form1 : Form
     {
         List<Combat.Classes.Unit> CreatedUnits = new List<Combat.Classes.Unit>();
+        List<Combat.Classes.Unit> PartyA = new List<Combat.Classes.Unit>();
+        List<Combat.Classes.Unit> PartyB = new List<Combat.Classes.Unit>();
         ListBox CharactersOnFile = new ListBox();
-        Chart StatChart = new Chart();
+        RichTextBox statBox = new RichTextBox();
+        RichTextBox partyATestBox = new RichTextBox();
+        RichTextBox partyBTestBox = new RichTextBox();
+        bool partyAReady = false, partyBReady = false;
+        Button PlayButton;
         Combat.Classes.Unit SelectedUnit;
-    
+
         public Form1()
         {
             InitializeComponent();
+
             CharactersOnFile = this.Controls.Find("CreatedCharacters", true).FirstOrDefault() as ListBox;
-            StatChart = this.Controls.Find("CharacterStatChart", true).FirstOrDefault() as Chart;
+            statBox = this.Controls.Find("StatTextBox", true).FirstOrDefault() as RichTextBox;
+            partyATestBox = this.Controls.Find("PartyATestBox", true).FirstOrDefault() as RichTextBox;
+            partyBTestBox = this.Controls.Find("PartyBTestBox", true).FirstOrDefault() as RichTextBox;
+            PlayButton = this.Controls.Find("StartGame", true).FirstOrDefault() as Button;
             SyncCreatedCharacters();
         }
 
@@ -36,31 +46,112 @@ namespace AssessExampleCombatForm
 
         public void SyncCreatedCharacters()
         {
+            CreatedUnits.Clear();
             string path = @"..\..\SavedFiles";      // File Path to our saved Units
             var relay = Directory.GetFiles(path);
             
-            foreach(var v in relay)
+            foreach (var v in relay)
             {
                 Combat.Classes.Unit t = Combat.Utilities.Serializer.DeserializeXML<Combat.Classes.Unit>((string)v);
                 CreatedUnits.Add(t);
             }
+
             UpdateCharacterListBox();
         }
 
         private void UpdateCharacterListBox()
         {
-            CharactersOnFile.Items.Clear();
 
+            CharactersOnFile.Items.Clear();
             foreach (Combat.Classes.Unit c in CreatedUnits)
             {
-                CharactersOnFile.Items.Add(c.Name);
+                CharactersOnFile.Items.Add(c.name);
             }
-                
+
         }
 
-       private void UpdateSelected(object sender, EventArgs e)
+        private void UpdateSelected(object sender, EventArgs e)
         {
-           // SelectedUnit = CharactersOnFile.GetSelected();
-        } 
+            string s = (string)CharactersOnFile.SelectedItem;
+            foreach (Combat.Classes.Unit u in CreatedUnits)
+            {
+                if (u.Name == s)
+                {
+                    SelectedUnit = u;
+                    statBox.Text = "Name: \t" + u.Name
+                                + "\nClass: \t" + u.ClassName
+                                + "\nHealth: \t\t" + u.Health
+                                + "\nSpeed: \t\t" + u.Speed
+                                + "\nDexterity: \t\t" + u.Dexerity
+                                + "\nStrength: \t\t" + u.Strength
+                                + "\nIntelligence: \t" + u.Intelligence;
+                }
+            }
+
+        }
+
+        private void AddToParty(object sender, EventArgs e)
+        {
+            Button b = sender as Button;
+
+            if (SelectedUnit != null)
+            {
+                if (b.Name == "AddSelectedToA") // Team A
+                {
+                    partyATestBox.Text += SelectedUnit.Name + "\n";
+                    PartyA.Add(SelectedUnit);
+                }
+                if (b.Name == "AddSelectedToB") // Team B
+                {
+                    partyBTestBox.Text += SelectedUnit.Name + "\n";
+                    PartyB.Add(SelectedUnit);
+                }
+            }
+            TeamReadyCheck();
+            if (b.Name == "AddSelectedToA" && partyAReady)
+            {
+                b.Visible = false;
+            }
+            if (b.Name == "AddSelectedToB" && partyBReady)
+            {
+                b.Visible = false;
+            }
+        }
+
+        private void TeamReadyCheck()
+        {
+            if (PartyA.Count == 3)
+            {
+                partyAReady = true;
+            }
+            if (PartyB.Count == 3)
+            {
+                partyBReady = true;
+
+            }
+
+            if (partyAReady && partyBReady)
+            {
+                PlayButton.Visible = true;
+            }
+        }
+
+        private void StartFight(object sender, EventArgs e)
+        {
+            BattleGround bg = new BattleGround();
+            bg.formParent = this;
+            bg.RecieveUnits(PartyA, PartyB);
+            bg.Show();
+        }
+
+        public void MyReset()
+        {
+            PartyA = new List<Combat.Classes.Unit>();
+            PartyB = new List<Combat.Classes.Unit>();
+            partyAReady = false;
+            partyBReady = false;
+
+
+        }
     }
 }

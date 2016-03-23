@@ -19,7 +19,18 @@ namespace Combat.Classes
                         intelligence;
         public bool     alive;
 
-        Unit() { }
+        Unit()
+        {
+            name = "John";
+            className = "Squire";
+            maxHealth = 5;
+            health = maxHealth;
+            speed = 0f;
+            dexterity = 0f;
+            strength = 0f;
+            intelligence = 0f;
+            alive = true;
+        }
 
         public Unit(string n, string cs, int mHealth, float spd, float dex, float str, float intel)
         {

@@ -118,10 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Troll_Face" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Troll_Face.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sephiroth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sephiroth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="squall_dissidia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\squall_dissidia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tonberry-enemy-ffx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tonberry-enemy-ffx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3565416-4948259062-Tidus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3565416-4948259062-Tidus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cloud_Strife" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cloud_Strife.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DissidiaKefkaArtwork" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DissidiaKefkaArtwork.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shy_ivara_by_zilvtree_zauani-d9jrp98" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shy_ivara_by_zilvtree_zauani-d9jrp98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Troll_Face" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Troll_Face.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kh2-Vivi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kh2-Vivi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cloud_gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cloud_gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

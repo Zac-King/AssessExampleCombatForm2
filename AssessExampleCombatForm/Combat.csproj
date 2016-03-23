@@ -110,6 +110,33 @@
   <ItemGroup>
     <None Include="Resources\shy_ivara_by_zilvtree_zauani-d9jrp98.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squall_dissidia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3565416-4948259062-Tidus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cloud_Strife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DissidiaKefkaArtwork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sephiroth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tonberry-enemy-ffx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kh2-Vivi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cloud_gif.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
