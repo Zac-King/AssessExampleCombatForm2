@@ -17,7 +17,7 @@ namespace AssessExampleCombatForm
         List<Combat.Classes.Unit> participants = new List<Combat.Classes.Unit>();
         List<Combat.Classes.Unit> partyA = new List<Combat.Classes.Unit>();
         List<Combat.Classes.Unit> partyB = new List<Combat.Classes.Unit>();
-        
+        List<Panel> UnitRepresentation = new List<Panel>();
 
         public BattleGround()
         {
@@ -39,9 +39,25 @@ namespace AssessExampleCombatForm
             participants.OrderByDescending(x => x.Speed).ToList<Unit>();
         }
 
-        //private void ResetParent(object sender, EventArgs e)
-        //{
-            
-        //}
+        private void Turn()
+        {
+
+        }
+
+        
+
+        public void SelectTarget(object sender, EventArgs e)
+        {
+            if( partyA.Contains(participants[0]) && participants[0].Alive)  // Player Controlled Unit
+            {
+
+            }
+
+            if (partyB.Contains(participants[0]) && participants[0].Alive)  // Player Controlled Unit
+            {
+
+            }
+
+        }
     }
 }

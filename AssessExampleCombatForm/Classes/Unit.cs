@@ -148,5 +148,20 @@ namespace Combat.Classes
             }
         }
         #endregion
+
+        public void Attack(Unit target)
+        {
+            target.Health -= (int)this.Strength;
+            Resolve();
+        }
+
+        private void Resolve()
+        {
+            if (Health <= 0)
+            {
+                Health = 0;
+                Alive = false;
+            }
+        }
     }
 }
